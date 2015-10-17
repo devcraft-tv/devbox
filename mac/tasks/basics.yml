@@ -1,2 +1,8 @@
-- name: Say Hello
-  debug: msg="Hello from Awesome"
+- name: Set up Bashrc
+  template: src=../templates/bashrc.bash dest=~/.bashrc
+
+- name: Set up Bash Profile
+  template: src=../templates/bash_profile.bash dest=~/.bash_profile
+
+- name: Set up Bash Prompt
+  template: src=../templates/bash_prompt.bash dest=~/.bash_prompt
