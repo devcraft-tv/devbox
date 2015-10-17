@@ -1,0 +1,12 @@
+- name: Install brew cask
+  homebrew: name=caskroom/cask/brew-cask state=present
+
+- name: Tap Caskroom versions
+  homebrew_tap: tap=caskroom/versions state=present
+
+- name: Install Sublime Text 3
+  homebrew_cask: name=sublime-text3 state=present
+
+- name: Install Package Control
+  sudo: yes
+  get_url: url=https://packagecontrol.io/Package%20Control.sublime-package dest=~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/Package\ Control.sublime-package
