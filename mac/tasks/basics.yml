@@ -6,3 +6,6 @@
 
 - name: Set up Bash Prompt
   template: src=../templates/bash_prompt.bash dest=~/.bash_prompt
+
+- name: Set up a Workspace Directory
+  file: path=~/work-space state=directory

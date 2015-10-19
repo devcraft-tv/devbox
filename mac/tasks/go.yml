@@ -1,0 +1,8 @@
+- name: Install Mercurial
+  homebrew: name=mercurial state=latest
+
+- name: Install Go
+  homebrew: name=go state=latest
+
+- name: Set up a Go Workspace
+  file: name=~/work-space/go state=directory
