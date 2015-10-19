@@ -1,0 +1,13 @@
+- name: Install Ruby requirements
+  homebrew: name={{ item }} state=present
+  with_items:
+    - gdbm
+    - libffi
+    - libyaml
+    - openssl
+    - readline
+    - chruby
+    - ruby-install
+
+- name: Install latest version  of Ruby
+  command: ruby-install ruby {{ ruby_version }} creates=~/.rubies/ruby-{{ ruby_version }}

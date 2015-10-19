@@ -3,3 +3,5 @@
   roles:
     - mac
   become_user: prem
+  vars:
+    ruby_version: 2.2.2

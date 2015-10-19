@@ -2,3 +2,4 @@
   - include: ./basics.yml
   - include: ./sublime.yml
   - include: ./go.yml
+  - include: ./ruby.yml

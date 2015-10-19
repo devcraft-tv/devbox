@@ -14,6 +14,11 @@ export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
 
+# Ruby Stuff
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+chruby ruby-{{ ruby_version }}
+
 # Load stuff without moaning
 source $BASH_IT/bash_it.sh
 source ~/.bash_prompt 2> /dev/null
